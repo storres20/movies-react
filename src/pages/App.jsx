@@ -8,13 +8,13 @@ import {
 } from "react-router-dom";
 import AboutPage from "../components/AboutPage";
 import NotFoundPage from "../components/NotFoundPage";
-import Navbar from "../components/Navbar";
+import NavbarRB from "../components/NavbarRB";
 import MovieDetails from "./MovieDetails";
 
 export function App() {
   return (
     <BrowserRouter>
-      <Navbar/>
+      <NavbarRB/>
       <header>
         <Link to="/">
           <h1 className={styles.title}>Movies</h1>

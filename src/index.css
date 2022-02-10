@@ -6,8 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 code {
@@ -16,6 +16,6 @@ code {
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
