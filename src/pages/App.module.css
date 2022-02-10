@@ -8,3 +8,7 @@
   margin: 32px 0px;
   font-weight: bold;
 }
+
+.title:hover{
+  opacity: 0.8;
+}
