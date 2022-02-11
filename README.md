@@ -26,7 +26,8 @@ Ademas, al dar click en las imagenes, se carga una pagina adicional en donde se 
 ## Guía de instalación
 ---
 * El proyecto está basado en la libreria React js
-* Se ha usado la version 6 de React-router-dom
+ * Se ha usado la version 6 de React-router-dom
+ * Para el Navbar se ha usado React-bootstrap y bootstrap
 * Para el Software de gestion de paquetes se está usando YARN
 * Para la instalacion:
   * Clonar el repositorio
