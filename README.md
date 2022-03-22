@@ -1,70 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"> Movies React</h1>
+<p align="center"><img src="https://user-images.githubusercontent.com/81504385/153679550-d9eb4294-72e9-4d0b-9f1f-fa1b472ed905.png"/></p> 
 
-## Available Scripts
+## Tabla de contenidos:
+---
 
-In the project directory, you can run:
+- [Descripción y contexto](#descripción-y-contexto)
+- [Guía de usuario](#guía-de-usuario)
+- [Guía de instalación](#guía-de-instalación)
+- [Información adicional](#información-adicional)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Descripción y contexto
+---
+Single Page Aplication con React js usando una API de peliculas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Guía de usuario
+---
+La Aplicacion se enlaza a una API de peliculas y en la pagina principal se visualizan las mismas. 
+Ademas, al dar click en las imagenes, se carga una pagina adicional en donde se visualiza mas detalles **(Title, Genres, Description)** provenientes de la API
 
-### `yarn test`
+![image](https://user-images.githubusercontent.com/81504385/153680366-caec6de2-d36b-4c0d-a85a-a4ff009f7c91.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ 	
+## Guía de instalación
+---
+* El proyecto está basado en la libreria React js
+ * Se ha usado la version 6 de React-router-dom
+ * Para el Navbar se ha usado React-bootstrap y bootstrap
+* Para el Software de gestion de paquetes se está usando YARN
+* Para la instalacion:
+  * Clonar el repositorio
+  * En la terminal de la carpeta clonada digitar `$ yarn install`
+  * Para ejecutar el proyecto, digitar en la terminal `$ yarn start`
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Información adicional
+---
+### 🔭Skils:
+Tecnologias utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| `🔭Frontend` | `⚡Backend` | `📫Database` |
+| ------ | ------ | ------ | 
+| CSS |  |  |
+| Bootstrap - React Bootstrap |  |  |
+| React js |  |  |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### 🌱 Beta version
+Pagina web
+<ul>
+<li> <a href="https://moviesx7.netlify.app/" target="_blank">https://moviesx7.netlify.app/</a> </li>
+</ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
