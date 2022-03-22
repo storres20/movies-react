@@ -6,7 +6,7 @@ import styles from "./MoviesGrid.module.css";
 export function MoviesGrid() {
   //let movies = [];
   const [movies, setMovies] = useState([]);
-  
+
   const [allData, setAllData] = useState([]);
 
   useEffect(() => {
@@ -38,7 +38,9 @@ export function MoviesGrid() {
 
   return (
     <div>
-      <input className="bg-dark text-white ml-5 mr-5" type="text" placeholder='Search...' onChange={event => handleSearch(event)} />
+      <div className={styles.divFlex}>
+        <input className={styles.inputFlex} type="text" placeholder='Search...' onChange={event => handleSearch(event)} />
+      </div>
 
       <ul className={styles.moviesGrid}>
         {movies.map((movie) => {

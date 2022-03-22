@@ -11,3 +11,14 @@
     grid-template-columns: 100%;
   }
 }
+
+.divFlex{
+  display: flex;
+  justify-content: center;
+}
+
+.inputFlex{
+  background-color: black;
+  color: white;
+  width: 300px;
+}
