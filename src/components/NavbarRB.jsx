@@ -13,9 +13,9 @@ export default function NavbarRB() {
         <Navbar.Brand className={styles.NavTitle}><NavLink to="/">Movies</NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link><NavLink to="/" className={styles.NavSubTitle}>Home</NavLink></Nav.Link>
-            <Nav.Link><NavLink to="/about" className={styles.NavSubTitle}>About</NavLink></Nav.Link>
+          <Nav className={`me-auto ${styles.NavBar}`}>
+            <NavLink to="/" className={styles.NavSubTitle}>Home</NavLink>
+            <NavLink to="/about" className={styles.NavSubTitle}>About</NavLink>
             <NavDropdown title="DropdownXXX" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1"><span>Action</span></NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2"><span>Another action</span></NavDropdown.Item>
