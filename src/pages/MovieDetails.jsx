@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import get from '../utils/httpClient';
 import styles from './MovieDetails.module.css';
@@ -11,6 +11,10 @@ export default function MovieDetails() {
     get(`/movie/${movieId}`).then((data) => {
       setMovie(data);
     });
+    return () => {
+      // Fix ... Warning: Can't perform a React state update on an unmounted component.
+      setMovie({});
+    };
   }, [movieId]);
 
   if (!movie) {
