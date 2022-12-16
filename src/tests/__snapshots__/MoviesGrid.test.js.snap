@@ -15,5 +15,8 @@ exports[`renders correctly 1`] = `
   <ul
     className="moviesGrid"
   />
+  <div
+    className="button"
+  />
 </div>
 `;
