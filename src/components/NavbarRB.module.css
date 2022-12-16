@@ -1,7 +1,16 @@
 .NavBar {
   display: flex;
   align-items: baseline;
-  gap: 20px;
+  gap: 40px;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .NavBar {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
 }
 
 .NavTitle {
@@ -10,6 +19,7 @@
   text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ff2d95 0 0 20px, #ff2d95 0 0 30px, #ff2d95 0 0 40px, #ff2d95 0 0 50px, #ff2d95 0 0 75px;
   color: white;
   font-weight: bold;
+  padding-right: 80px;
 }
 
 .NavTitle:hover,
