@@ -17,6 +17,12 @@ export default function MoviesGrid() {
         setMovies(data.results);
         setAllData(data.results);
       });
+
+    return () => {
+      // Fix ... Warning: Can't perform a React state update on an unmounted component.
+      setMovies({});
+      setAllData({});
+    };
   }, []);
 
   const handleSearch = (event) => {
