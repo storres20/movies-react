@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-dark"
+  >
+    <div
+      className="container"
+    >
+      <span
+        className="NavTitle navbar-brand"
+      >
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          Movies
+        </a>
+      </span>
+      <button
+        aria-controls="basic-navbar-nav"
+        aria-label="Toggle navigation"
+        className="navbar-toggler collapsed"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="basic-navbar-nav"
+      >
+        <div
+          className="me-auto navbar-nav"
+          onKeyDown={[Function]}
+        >
+          <a
+            className="nav-link"
+            data-rr-ui-event-key={null}
+            href="#"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <a
+              aria-current="page"
+              className="NavSubTitle active"
+              href="/"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </a>
+          <a
+            className="nav-link"
+            data-rr-ui-event-key={null}
+            href="#"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <a
+              className="NavSubTitle"
+              href="/about"
+              onClick={[Function]}
+            >
+              About
+            </a>
+          </a>
+          <div
+            className="nav-item dropdown"
+          >
+            <a
+              aria-expanded={false}
+              className="dropdown-toggle nav-link"
+              data-rr-ui-event-key={null}
+              href="#"
+              id="basic-nav-dropdown"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              DropdownXXX
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <header>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="title"
+      >
+        Movies
+      </h1>
+    </a>
+  </header>,
+  <main>
+    <div>
+      <div
+        className="divFlex"
+      >
+        <input
+          className="inputFlex"
+          onChange={[Function]}
+          placeholder="Search..."
+          type="text"
+        />
+      </div>
+      <ul
+        className="moviesGrid"
+      />
+    </div>
+  </main>,
+]
+`;
