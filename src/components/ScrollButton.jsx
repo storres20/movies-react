@@ -18,6 +18,7 @@ function ScrollButton() {
 
   useEffect(() => {
     window.addEventListener('scroll', scrollChange);
+    // Fix ... Warning: Can't perform a React state update on an unmounted component.
     return () => {
       window.removeEventListener('scroll', scrollChange);
     };
@@ -34,10 +35,8 @@ function ScrollButton() {
   return (
     <div className={styles.button}>
       {showButton && (
-      <FaArrowCircleUp onClick={scrollToTop} />
+        <FaArrowCircleUp onClick={scrollToTop} />
       )}
-
-      {/* &#8679; is used to create the upward arrow */}
     </div>
   );
 }
