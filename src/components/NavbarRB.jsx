@@ -8,7 +8,7 @@ import styles from './NavbarRB.module.css';
 
 export default function NavbarRB() {
   return (
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="dark" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand className={styles.NavTitle}><NavLink to="/">Movies</NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
