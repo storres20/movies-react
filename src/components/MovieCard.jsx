@@ -21,5 +21,9 @@ export default function MovieCard({ movie }) {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.shape.isRequired, // "shape" is for OBJECT
+  movie: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    poster_path: PropTypes.string,
+  }).isRequired,
 };
