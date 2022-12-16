@@ -1,3 +1,9 @@
+.NavBar {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
 .NavTitle {
   text-align: center;
   font-size: 1.5rem;
