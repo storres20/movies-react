@@ -1,18 +1,32 @@
-.NavTitle{
-  text-align: center;
-  font-size: 1.5rem;
-  
-  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-  
-  color: white;
-  font-weight: bold;
+.NavBar {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
 }
 
-.NavTitle:hover, .NavSubTitle:hover{
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .NavBar {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+}
+
+.NavTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ff2d95 0 0 20px, #ff2d95 0 0 30px, #ff2d95 0 0 40px, #ff2d95 0 0 50px, #ff2d95 0 0 75px;
+  color: white;
+  font-weight: bold;
+  padding-right: 80px;
+}
+
+.NavTitle:hover,
+.NavSubTitle:hover {
   opacity: 0.8;
 }
 
-span{
+span {
   color: black !important;
 }
-

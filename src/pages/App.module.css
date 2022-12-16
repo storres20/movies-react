@@ -1,14 +1,12 @@
-.title{
+.title {
   text-align: center;
   font-size: 3rem;
-  
-  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-  
+  text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ff2d95 0 0 20px, #ff2d95 0 0 30px, #ff2d95 0 0 40px, #ff2d95 0 0 50px, #ff2d95 0 0 75px;
   color: white;
-  margin: 32px 0px;
+  margin: 32px 0;
   font-weight: bold;
 }
 
-.title:hover{
+.title:hover {
   opacity: 0.8;
 }
