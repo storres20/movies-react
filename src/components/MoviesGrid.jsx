@@ -1,17 +1,18 @@
-import { useEffect, useState } from "react";
-import get from "../utils/httpClient";
-import { MovieCard } from "./MovieCard";
-import styles from "./MoviesGrid.module.css";
+/* eslint-disable max-len */
+import { useEffect, useState } from 'react';
+import get from '../utils/httpClient';
+import MovieCard from './MovieCard';
+import styles from './MoviesGrid.module.css';
 
-export function MoviesGrid() {
-  //let movies = [];
+export default function MoviesGrid() {
+  // let movies = [];
   const [movies, setMovies] = useState([]);
 
   const [allData, setAllData] = useState([]);
 
   useEffect(() => {
-    get("/discover/movie")
-      .then(data => {
+    get('/discover/movie')
+      .then((data) => {
         setMovies(data.results);
         setAllData(data.results);
       });
@@ -21,31 +22,23 @@ export function MoviesGrid() {
     const keyword = event.target.value;
 
     if (keyword !== '') {
-      const results = allData.filter((user) => {
-        //return user.title.toLowerCase().startsWith(keyword.toLowerCase());
-        return user.title.toLowerCase().includes(keyword.toLowerCase());
-        // Use the toLowerCase() method to make it case-insensitive
-      });
+      const results = allData.filter((user) => user.title.toLowerCase().includes(keyword.toLowerCase()));
 
       setMovies(results);
-
     } else {
       setMovies(allData);
       // If the text field is empty, show all users
     }
-
-  }
+  };
 
   return (
     <div>
       <div className={styles.divFlex}>
-        <input className={styles.inputFlex} type="text" placeholder='Search...' onChange={event => handleSearch(event)} />
+        <input className={styles.inputFlex} type="text" placeholder="Search..." onChange={(event) => handleSearch(event)} />
       </div>
 
       <ul className={styles.moviesGrid}>
-        {movies.map((movie) => {
-          return <MovieCard key={movie.id} movie={movie} />
-        })}
+        {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </ul>
     </div>
   );
