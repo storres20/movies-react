@@ -1,4 +1,4 @@
-.moviesGrid{
+.moviesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 230px);
   gap: 40px;
@@ -6,18 +6,18 @@
   justify-content: center;
 }
 
-@media (max-width: 560px){
-  .moviesGrid{
+@media (max-width: 560px) {
+  .moviesGrid {
     grid-template-columns: 100%;
   }
 }
 
-.divFlex{
+.divFlex {
   display: flex;
   justify-content: center;
 }
 
-.inputFlex{
+.inputFlex {
   background-color: black;
   color: white;
   width: 300px;
