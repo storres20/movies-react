@@ -4,8 +4,8 @@
   gap: 40px;
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
   .NavBar {
     display: flex;
     align-items: baseline;
