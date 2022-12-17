@@ -1,6 +1,6 @@
 .button {
   position: fixed;
-  width: 50%;
+  width: 0%;
   left: 30px;
   bottom: 70px;
   height: 20px;
@@ -9,4 +9,8 @@
   cursor: pointer;
   color: white;
   filter:drop-shadow(0px 0px 10px red);
+}
+
+.button:hover {
+  font-size: 3.5rem;
 }
