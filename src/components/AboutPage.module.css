@@ -41,16 +41,16 @@
 
 .content > h2 {
   height: 233px;
-  line-height: 233px;
+  line-height: 173px;
   font-family: 'Shrikhand', cursive;
-  font-size: 10em;
+  font-size: 8em;
   font-weight: 400;
 }
 
 .content > img {
   margin-top: -140px;
-  width: 902px;
-  height: 298px;
+  width: 100%;
+  height: auto;
 }
 
 .content > h3 {
@@ -124,7 +124,7 @@
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 991px) {
   /* Styles */
   .inner_content {
     /* width: 100hv; */
@@ -143,7 +143,7 @@
   }
   
   .content > img {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   
