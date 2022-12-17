@@ -9,7 +9,8 @@
   .NavBar {
     display: flex;
     align-items: baseline;
-    gap: 10px;
+    gap: 25px;
+    padding: 20px 0;
   }
 }
 
