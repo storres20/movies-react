@@ -1,7 +1,7 @@
 .NavBar {
   display: flex;
   align-items: baseline;
-  gap: 40px;
+  gap: 100px;
 }
 
 /* Extra Small Devices, Phones */
