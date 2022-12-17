@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import get from '../utils/httpClient';
 import MovieCard from './MovieCard';
 import styles from './MoviesGrid.module.css';
+import ScrollButton from './ScrollButton';
 
 export default function MoviesGrid() {
   // let movies = [];
@@ -16,6 +17,12 @@ export default function MoviesGrid() {
         setMovies(data.results);
         setAllData(data.results);
       });
+
+    return () => {
+      // Fix ... Warning: Can't perform a React state update on an unmounted component.
+      setMovies({});
+      setAllData({});
+    };
   }, []);
 
   const handleSearch = (event) => {
@@ -40,6 +47,9 @@ export default function MoviesGrid() {
       <ul className={styles.moviesGrid}>
         {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </ul>
+
+      {/* Scroll button for going back to TOP page */}
+      <ScrollButton />
     </div>
   );
 }

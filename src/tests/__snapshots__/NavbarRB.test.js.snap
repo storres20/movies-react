@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <nav
-  className="navbar navbar-expand-lg navbar-light bg-dark"
+  className="navbar navbar-expand-lg navbar-light bg-dark sticky-top"
 >
   <div
     className="container"
@@ -36,43 +36,23 @@ exports[`renders correctly 1`] = `
       id="basic-navbar-nav"
     >
       <div
-        className="me-auto navbar-nav"
+        className="me-auto NavBar navbar-nav"
         onKeyDown={[Function]}
       >
         <a
-          className="nav-link"
-          data-rr-ui-event-key={null}
-          href="#"
+          aria-current="page"
+          className="NavSubTitle active"
+          href="/"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
-          tabIndex={0}
         >
-          <a
-            aria-current="page"
-            className="NavSubTitle active"
-            href="/"
-            onClick={[Function]}
-          >
-            Home
-          </a>
+          Home
         </a>
         <a
-          className="nav-link"
-          data-rr-ui-event-key={null}
-          href="#"
+          className="NavSubTitle"
+          href="/about"
           onClick={[Function]}
-          onKeyDown={[Function]}
-          role="button"
-          tabIndex={0}
         >
-          <a
-            className="NavSubTitle"
-            href="/about"
-            onClick={[Function]}
-          >
-            About
-          </a>
+          About
         </a>
         <div
           className="nav-item dropdown"
