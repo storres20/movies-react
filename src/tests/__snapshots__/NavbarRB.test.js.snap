@@ -54,23 +54,6 @@ exports[`renders correctly 1`] = `
         >
           About
         </a>
-        <div
-          className="nav-item dropdown"
-        >
-          <a
-            aria-expanded={false}
-            className="dropdown-toggle nav-link"
-            data-rr-ui-event-key={null}
-            href="#"
-            id="basic-nav-dropdown"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            role="button"
-            tabIndex={0}
-          >
-            DropdownXXX
-          </a>
-        </div>
       </div>
     </div>
   </div>

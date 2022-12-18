@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
-import MoviesGrid from '../components/MoviesGrid';
+import SearchBar from '../components/SearchBar';
 import moviesReducer from '../redux/movies/movies';
 
 // configureStore
@@ -28,12 +28,12 @@ describe('My Connected React-Redux Component', () => {
     // Create a redux store
     component = renderer.create(
       <Provider store={store}>
-        <MoviesGrid />
+        <SearchBar />
       </Provider>,
     ).toJSON();
   });
 
-  test('renders correctly', () => {
+  it('renders correctly', () => {
     expect(component).toMatchSnapshot();
   });
 });
