@@ -1,48 +1,30 @@
-/* eslint-disable max-len */
-import { useEffect, useState } from 'react';
-import get from '../utils/httpClient';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import MovieCard from './MovieCard';
 import styles from './MoviesGrid.module.css';
 import ScrollButton from './ScrollButton';
+// Redux
+import { getMovie } from '../redux/movies/movies';
+import SearchBar from './SearchBar';
+// ***
 
 export default function MoviesGrid() {
-  // let movies = [];
-  const [movies, setMovies] = useState([]);
-
-  const [allData, setAllData] = useState([]);
+  /* Setup Redux dispatch */
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    get('/discover/movie')
-      .then((data) => {
-        setMovies(data.results);
-        setAllData(data.results);
-      });
+    dispatch(getMovie());
+  }, [dispatch]);
 
-    return () => {
-      // Fix ... Warning: Can't perform a React state update on an unmounted component.
-      setMovies({});
-      setAllData({});
-    };
-  }, []);
+  /* Load Redux State */
+  const movies = useSelector((state) => state.movie);
 
-  const handleSearch = (event) => {
-    const keyword = event.target.value;
-
-    if (keyword !== '') {
-      const results = allData.filter((user) => user.title.toLowerCase().includes(keyword.toLowerCase()));
-
-      setMovies(results);
-    } else {
-      setMovies(allData);
-      // If the text field is empty, show all users
-    }
-  };
+  // *********************************
 
   return (
     <div>
-      <div className={styles.divFlex}>
-        <input className={styles.inputFlex} type="text" placeholder="Search..." onChange={(event) => handleSearch(event)} />
-      </div>
+      {/* Filter Search Bar */}
+      <SearchBar />
 
       <ul className={styles.moviesGrid}>
         {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
