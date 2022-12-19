@@ -5,6 +5,7 @@ import styles from './MoviesGrid.module.css';
 import ScrollButton from './ScrollButton';
 // Redux
 import { getMovie } from '../redux/movies/movies';
+import { getAllData } from '../redux/movies/allData';
 import SearchBar from './SearchBar';
 // ***
 
@@ -14,17 +15,19 @@ export default function MoviesGrid() {
 
   useEffect(() => {
     dispatch(getMovie());
+    dispatch(getAllData());
   }, [dispatch]);
 
   /* Load Redux State */
   const movies = useSelector((state) => state.movie);
+  const allData = useSelector((state) => state.allData);
 
   // *********************************
 
   return (
     <div>
       {/* Filter Search Bar */}
-      <SearchBar />
+      <SearchBar allData={allData} />
 
       <ul className={styles.moviesGrid}>
         {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
