@@ -1,22 +1,17 @@
 /* eslint-disable max-len */
-import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import styles from './SearchBar.module.css';
 // Redux
 import { updateMovie } from '../redux/movies/movies';
 // ***
 
-function SearchBar() {
+function SearchBar({ allData }) {
 /* Setup Redux dispatch */
   const dispatch = useDispatch();
 
-  /* Load Redux State */
-  const movies = useSelector((state) => state.movie);
-
-  // *********************************
-
   /* allData = movies (original values) */
-  const [allData] = useState(movies); // fixed values
 
   // Filter search bar
   const handleSearch = (event) => {
@@ -39,5 +34,9 @@ function SearchBar() {
     </div>
   );
 }
+
+SearchBar.propTypes = {
+  allData: PropTypes.shape.isRequired,
+};
 
 export default SearchBar;
