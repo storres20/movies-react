@@ -1,14 +1,16 @@
 /* eslint-disable max-len */
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import styles from './SearchBar.module.css';
 // Redux
 import { updateMovie } from '../redux/movies/movies';
 // ***
 
-function SearchBar({ allData }) {
-/* Setup Redux dispatch */
+function SearchBar() {
+  /* Load Redux State */
+  const allData = useSelector((state) => state.allData);
+
+  /* Setup Redux dispatch */
   const dispatch = useDispatch();
 
   /* allData = movies (original values) */
@@ -34,10 +36,5 @@ function SearchBar({ allData }) {
     </div>
   );
 }
-
-SearchBar.propTypes = {
-  // PropTypes for OBJECTS
-  allData: PropTypes.instanceOf(Object).isRequired,
-};
 
 export default SearchBar;
