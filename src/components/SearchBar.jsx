@@ -36,7 +36,8 @@ function SearchBar({ allData }) {
 }
 
 SearchBar.propTypes = {
-  allData: PropTypes.shape.isRequired,
+  // PropTypes for OBJECTS
+  allData: PropTypes.instanceOf(Object).isRequired,
 };
 
 export default SearchBar;
