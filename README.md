@@ -1,12 +1,10 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  ![image](https://user-images.githubusercontent.com/81504385/209019819-d5e924df-4d9c-42f5-bf82-b8a34a991233.png)
-
+  <h1><b>Movies Project</b></h1>
   <br/>
 
-  <h3><b>Movies Project</b></h3>
+  ![image](https://user-images.githubusercontent.com/81504385/209019819-d5e924df-4d9c-42f5-bf82-b8a34a991233.png)
 
 </div>
 
@@ -15,7 +13,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[spaceTravelHub\] ](#-spacetravelhub-)
+- [📖 \[Movies Project\] ](#-movies-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -37,12 +35,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [movies Project] <a name="about-project"></a>
+# 📖 [Movies Project] <a name="about-project"></a>
 
-> This is a web application for a company that provides commercial and scientific space travel services.
-> The application will allow users to book rockets and join selected space missions.
+> This is a web application for shows the most recent Movies.
+> The application will allow users to see details like title, author, description.
 
-**[spaceTravelHub]** is web application.
+**[Movies Project]** is web application.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -81,7 +79,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://spacetravelhub.onrender.com)
+- [Live Demo Link](https://moviesx7.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +104,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/storres20/spaceTravelHub.git
+  git clone https://github.com/storres20/movies-react
 ```
 
 ### Install
@@ -114,7 +112,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd spaceTravelHub
+  cd movies-react
   npm install
 ```
 
@@ -158,12 +156,6 @@ You can deploy this project using:
 - Twitter: [@italolonkan](https://twitter.com/italolonkan)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/italo-lon-kan)
 
-👤 **YOUSSEF**
-
-- GitHub: [@YKerroum](https://github.com/YKerroum)
-- Twitter: [@kerroum_youssef](https://twitter.com/kerroum_youssef)
-- LinkedIn: [@ykerroum](https://linkedin.com/in/ykerroum/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -185,7 +177,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/storres20/spaceTravelHub/issues).
+Feel free to check the [issues page](https://github.com/storres20/movies-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
