@@ -7,14 +7,12 @@ import SearchBar from './SearchBar';
 export default function MoviesGrid() {
   /* Load Redux State */
   const movies = useSelector((state) => state.movie);
-  const allData = useSelector((state) => state.allData);
-
   // *********************************
 
   return (
     <div>
       {/* Filter Search Bar */}
-      <SearchBar allData={allData} />
+      <SearchBar />
 
       <ul className={styles.moviesGrid}>
         {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
