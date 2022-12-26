@@ -32,3 +32,9 @@ a {
   text-decoration: none !important;
   color: white !important;
 }
+
+/* Movies Title */
+header {
+  display: flex;
+  justify-content: center;
+}
