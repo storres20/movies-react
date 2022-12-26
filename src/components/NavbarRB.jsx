@@ -6,6 +6,8 @@ import {
 } from 'react-bootstrap';
 import styles from './NavbarRB.module.css';
 
+import Footer from './Footer/Footer';
+
 export default function NavbarRB() {
   return (
     <Navbar bg="dark" expand="lg" sticky="top">
@@ -17,6 +19,7 @@ export default function NavbarRB() {
             <NavLink to="/" className={styles.NavSubTitle}>Home</NavLink>
             <NavLink to="/about" className={styles.NavSubTitle}>About</NavLink>
           </Nav>
+          <Footer />
         </Navbar.Collapse>
       </Container>
     </Navbar>
