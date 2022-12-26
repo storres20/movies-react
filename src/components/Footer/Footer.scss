@@ -1,0 +1,24 @@
+.footerContainer {
+  color: white;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer > p {
+  margin: 0;
+}
+
+.footerContainer > p > a {
+  text-decoration: none;
+}
+
+.footerContainer > p > a > b {
+  color: #0d6efd;
+}
+
+.footerContainer > p > a > b:hover {
+  color: #0343a2;
+}
