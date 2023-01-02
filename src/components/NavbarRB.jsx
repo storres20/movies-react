@@ -10,7 +10,7 @@ import Footer from './Footer/Footer';
 
 export default function NavbarRB() {
   return (
-    <Navbar bg="dark" expand="lg" sticky="top">
+    <Navbar bg="dark" expand="lg" sticky="top" variant="dark">
       <Container>
         <Navbar.Brand className={styles.NavTitle}><NavLink to="/">Movies</NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
